@@ -1,0 +1,310 @@
+:root{
+    --height-topbar: 5rem;
+    --translate-wtopbar: 2rem;
+    --body-color: #fafafa;
+    --main-color: #ad5389;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--body-color);
+}
+
+.color-main{
+    color: var(--main-color);
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.upper{
+    text-transform: uppercase;
+}
+.divider{
+    /* background-image: url(./Linth.png); */
+    background-position: center;
+    background-size: contain;
+    height: 10rem;
+    background-color: #330033;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='264' height='264' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1.8'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='6'/%3E%3Ccircle cx='539' cy='269' r='6'/%3E%3Ccircle cx='603' cy='493' r='6'/%3E%3Ccircle cx='731' cy='737' r='6'/%3E%3Ccircle cx='520' cy='660' r='6'/%3E%3Ccircle cx='309' cy='538' r='6'/%3E%3Ccircle cx='295' cy='764' r='6'/%3E%3Ccircle cx='40' cy='599' r='6'/%3E%3Ccircle cx='102' cy='382' r='6'/%3E%3Ccircle cx='127' cy='80' r='6'/%3E%3Ccircle cx='370' cy='105' r='6'/%3E%3Ccircle cx='578' cy='42' r='6'/%3E%3Ccircle cx='237' cy='261' r='6'/%3E%3Ccircle cx='390' cy='382' r='6'/%3E%3C/g%3E%3C/svg%3E");
+    /* background-color: #592161; */
+/* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='264' height='264' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23560056' stroke-width='1.8'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%232D002D'%3E%3Ccircle cx='769' cy='229' r='6'/%3E%3Ccircle cx='539' cy='269' r='6'/%3E%3Ccircle cx='603' cy='493' r='6'/%3E%3Ccircle cx='731' cy='737' r='6'/%3E%3Ccircle cx='520' cy='660' r='6'/%3E%3Ccircle cx='309' cy='538' r='6'/%3E%3Ccircle cx='295' cy='764' r='6'/%3E%3Ccircle cx='40' cy='599' r='6'/%3E%3Ccircle cx='102' cy='382' r='6'/%3E%3Ccircle cx='127' cy='80' r='6'/%3E%3Ccircle cx='370' cy='105' r='6'/%3E%3Ccircle cx='578' cy='42' r='6'/%3E%3Ccircle cx='237' cy='261' r='6'/%3E%3Ccircle cx='390' cy='382' r='6'/%3E%3C/g%3E%3C/svg%3E"); */
+}
+.nav-contactos{
+    /* border: 1px solid red; */
+    height: var(--height-topbar);
+}
+.wrapper-topbar{
+    position: relative;
+    top: calc(var(--translate-wtopbar) * -1);
+    z-index: 10;
+
+}
+.nav-contactos__inside{
+    height: calc(var(--height-topbar) - var(--translate-wtopbar));
+}
+.nav-contactos__iconos{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.4rem;
+    color: var(--main-color);
+}
+.hero{
+    position: relative;
+    top: -56px;
+    margin-bottom: -24px;
+    /* min-height: calc(100vh - 56px - var(--height-topbar)); */
+    height: calc(100vh - 16px - var(--height-topbar));
+    max-height: calc(100vh - 16px - var(--height-topbar));
+}
+.hero img{
+    max-width: 100%;
+    /* max-height: 300px; */
+}
+.hero figure{
+    width: 100%;
+    max-height: calc(100vh - 16px - var(--height-topbar));
+}
+.img-carousel{
+    height: calc(100vh - 16px - var(--height-topbar));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.carousel-inner .carousel-item:first-child .img-carousel{
+    background-image: url(./teotihuacan.jpg);    
+}
+.carousel-inner .carousel-item:nth-child(2) .img-carousel{
+    background-image: url(./hero2.jpg);    
+}
+.carousel-inner .carousel-item:last-child .img-carousel{
+    background-image: url(./hero3.jpg);    
+}
+.card-servicio{
+    min-height: 100px;
+    min-width: 400px;
+    margin: auto;
+    /* border: 1px solid blue; */
+}
+figure{
+    margin-bottom: 0px;
+}
+
+
+
+.movie {
+    max-width: 600px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 5px 20px 10px rgba(0, 0, 0, .2);
+    overflow: hidden;
+    max-height: 270px;
+}
+
+.movie__hero{
+    max-width: 300px;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.movie__img {
+    width: 100%;
+    display: block;    
+}
+
+.movie__content {
+    background-color: #fff;
+    flex: 1;
+    padding: 35px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie__price {
+    background:linear-gradient(to bottom, #ad5389 0%, #3c1053 100%);
+    flex: 0 0 50px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    writing-mode: vertical-lr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.heading__primary {
+    font-size: 16px;
+    margin-right: auto;
+    color: royalblue;
+}
+
+.fa-fire {
+    color: salmon;
+}
+
+.movie__tag {
+    font-size: 10px;
+    color: #fff;
+  padding: 2px 7px;
+  border-radius: 100px;
+  margin-right: 8px;
+  display: block;
+  text-transform: uppercase;
+
+}
+
+.movie__tag--1 {
+  background-color: #A9C9FF;
+}
+
+.movie__tag--2 {
+    background-color:#FFBBEC;
+}
+
+.movie__description {
+    font-size: 14px;
+}
+
+.movie__details {
+    display: flex;
+    margin: auto;
+    gap: 1.5rem;
+}
+
+.movie__detail {
+   font-size: 13px;
+   margin-right: 20px;
+   display: flex;
+   align-items: center;
+}
+
+.icons i {
+    margin-right: 3px;
+    font-size: 18px;
+}
+
+.icons-red {
+    color: salmon;
+}
+.icons-grey {
+    color: grey;
+}
+
+.icons-yellow {
+    color: rgb(190, 190, 71);
+
+}
+
+.movie__img:hover{
+    transform: scale(1.5);
+}
+
+.navbar-brand{
+    color: var(--main-color);
+}
+.nav-link{
+    color: var(--main-color);
+
+}
+#comentarios{
+    margin-top: 10rem;
+}
+#containerCardsComentarios{
+    gap: 5rem;
+}
+.container-img-nombre__comentario{
+    position: relative;
+    top: -3rem;
+    margin-bottom: -3rem;
+}
+
+.img-comentario{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+.container-stars{
+    color: var(--main-color);
+    font-size: 3rem;
+}
+footer{
+    background-color: #330033;
+    color: #fff;
+    padding-top: 2rem;
+}
+.fila {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.columna {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  /* overflow: hidden; */
+}
+
+.columna img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+
+}
+#galeria img{
+    opacity: 0.5;
+    position: relative;
+}
+#galeria img:hover{
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.2);
+    overflow: hidden;
+    z-index: 1000;
+}
+@media (max-width: 575.98px) {
+    #containerNavbar{
+        padding: 0px;
+    }
+    .movie{
+        flex-direction: column;
+        max-height: 500px;
+    }
+    .movie__price{
+        writing-mode: unset;
+    }
+    .movie__hero{
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 800px) {
+  .columna {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columna {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
