@@ -30,7 +30,7 @@ L.tileLayer(tilesProvider, {
     maxZoom: 18,
 }).addTo(myMap);
 
-myMap.setView([19.697261540267355, -98.8328436000443],18);
+myMap.setView([19.697261540267355, -98.8328436000443],16);
 let ubicacionActual = { lat: 19.697261540267355, lng: -98.8328436000443 }
  /** añadir marcador */
 markerOrigen = L.marker(ubicacionActual);
