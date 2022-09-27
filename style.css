@@ -53,6 +53,10 @@ body{
     font-size: 1.4rem;
     color: var(--main-color);
 }
+.nav-contactos__iconos a, .nav-contactos__inside a, footer a{
+    text-decoration: none;
+    color: var(--main-color);
+}
 .hero{
     position: relative;
     top: -56px;
@@ -76,17 +80,20 @@ body{
     background-position: center;
 }
 .carousel-inner .carousel-item:first-child .img-carousel{
-    background-image: url(./teotihuacan.jpg);    
-}
-.carousel-inner .carousel-item:nth-child(2) .img-carousel{
     background-image: url(./hero2.jpg);    
 }
-.carousel-inner .carousel-item:last-child .img-carousel{
+.carousel-inner .carousel-item:nth-child(2) .img-carousel{
     background-image: url(./hero3.jpg);    
+}
+.carousel-inner .carousel-item:nth-child(3) .img-carousel{
+    background-image: url(./heroimg3.jpg);    
+}
+.carousel-inner .carousel-item:last-child .img-carousel{
+    background-image: url(./heroimg4.jpg);    
 }
 .card-servicio{
     min-height: 100px;
-    min-width: 400px;
+    min-width: 200px;
     margin: auto;
     /* border: 1px solid blue; */
 }
