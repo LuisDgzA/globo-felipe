@@ -104,17 +104,19 @@ figure{
 
 
 .movie {
-    max-width: 600px;
+    max-width: 900px;
+    min-width: 900px;
     border-radius: 5px;
     display: flex;
     box-shadow: 0 5px 20px 10px rgba(0, 0, 0, .2);
     overflow: hidden;
-    max-height: 270px;
+    max-height: 570px;
+    margin: auto;
 }
 
 .movie__hero{
     max-width: 300px;
-    max-height: 300px;
+    max-height: 400px;
     overflow: hidden;
 }
 
@@ -126,7 +128,7 @@ figure{
 .movie__content {
     background-color: #fff;
     flex: 1;
-    padding: 35px 30px;
+    padding: 20px 30px;
     display: flex;
     flex-direction: column;
 }
@@ -151,9 +153,10 @@ figure{
 }
 
 .heading__primary {
-    font-size: 16px;
+    font-size: 1.7rem;
     margin-right: auto;
-    color: royalblue;
+    color: #813974;
+    font-weight: bold;
 }
 
 .fa-fire {
@@ -161,7 +164,7 @@ figure{
 }
 
 .movie__tag {
-    font-size: 10px;
+    font-size: 0.7rem;
     color: #fff;
   padding: 2px 7px;
   border-radius: 100px;
@@ -180,7 +183,9 @@ figure{
 }
 
 .movie__description {
-    font-size: 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(38, 38, 38, 0.8);
 }
 
 .movie__details {
@@ -190,7 +195,7 @@ figure{
 }
 
 .movie__detail {
-   font-size: 13px;
+   font-size: 1rem;
    margin-right: 20px;
    display: flex;
    align-items: center;
@@ -298,6 +303,18 @@ footer{
     border-bottom: 1px solid var(--main-color);
     box-shadow: none;
 }
+.title-incluye{
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgba(38, 38, 38, 0.7);
+}
+li{
+    color: rgba(38, 38, 38, 0.6);
+}
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
 @media (max-width: 575.98px) {
     #containerNavbar{
         padding: 0px;
@@ -319,6 +336,11 @@ footer{
     flex: 50%;
     max-width: 50%;
   }
+  .movie{
+        flex-direction: column;
+        max-height: 500px;
+        min-width: auto;
+    }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
