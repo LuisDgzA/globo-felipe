@@ -315,6 +315,12 @@ li{
 .carousel-control-prev /*, .carousel-indicators */ {
     filter: invert(100%);
 }
+.row .card{
+    margin: auto;
+}
+/* .carousel-item .card{
+    z-index: 100;
+} */
 @media (max-width: 575.98px) {
     #containerNavbar{
         padding: 0px;
@@ -330,19 +336,14 @@ li{
         max-width: 100%;
         height: 200px;
     }
-}
-@media screen and (max-width: 800px) {
-  .columna {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-  .movie{
+    .movie{
         flex-direction: column;
-        max-height: 500px;
+        min-height: 750px;
+        max-height: 750px;
         min-width: auto;
     }
 }
+
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -351,4 +352,12 @@ li{
     flex: 100%;
     max-width: 100%;
   }
+}
+@media screen and (max-width: 800px) {
+  .columna {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+  
 }
