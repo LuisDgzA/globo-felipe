@@ -284,6 +284,20 @@ footer{
     overflow: hidden;
     z-index: 1000;
 }
+.accordion-button{
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--main-color);
+}
+.accordion-button:not(.collapsed){
+    background-color: #fff;
+    color: var(--main-color);
+}
+.accordion-button:focus{
+    border: none;
+    border-bottom: 1px solid var(--main-color);
+    box-shadow: none;
+}
 @media (max-width: 575.98px) {
     #containerNavbar{
         padding: 0px;
