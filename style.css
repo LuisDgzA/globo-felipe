@@ -353,6 +353,15 @@ li{
     max-width: 100%;
   }
 }
+
+@media (max-width: 767.98px) {
+    .carousel-inner .carousel-item:first-child .img-carousel{
+        background-image: url("./hero2(1).jpg");    
+    }
+    .carousel-inner .carousel-item:nth-child(2) .img-carousel{
+        background-image: url("./hero3(1).jpg");    
+    }
+}
 @media screen and (max-width: 800px) {
   .columna {
     -ms-flex: 50%;
@@ -361,3 +370,5 @@ li{
   }
   
 }
+
+
