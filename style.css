@@ -52,6 +52,7 @@ body{
     gap: 2rem;
     font-size: 1.4rem;
     color: var(--main-color);
+    justify-content: center;
 }
 .nav-contactos__iconos a, .nav-contactos__inside a, footer a{
     text-decoration: none;
@@ -317,6 +318,14 @@ li{
 }
 .row .card{
     margin: auto;
+}
+.card-img-overlay{
+    padding: 0px;
+}
+.card-img-overlay .card-title, .card-img-overlay .card-text{
+    background-color: rgba(0, 0, 0, .2);
+    margin: 0;
+    padding: 0.6rem;
 }
 /* .carousel-item .card{
     z-index: 100;
