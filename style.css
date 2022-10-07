@@ -230,7 +230,7 @@ figure{
 
 }
 #comentarios{
-    margin-top: 10rem;
+    /* margin-top: 10rem; */
 }
 #containerCardsComentarios{
     gap: 5rem;
