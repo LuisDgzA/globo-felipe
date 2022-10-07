@@ -113,6 +113,7 @@ figure{
     overflow: hidden;
     max-height: 570px;
     margin: auto;
+    min-height: 400px;
 }
 
 .movie__hero{
@@ -160,6 +161,7 @@ figure{
     margin-right: auto;
     color: #813974;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .fa-fire {
@@ -325,7 +327,7 @@ li{
     padding: 0px;
 }
 .card-img-overlay .card-title, .card-img-overlay .card-text{
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .4);
     margin: 0;
     padding: 0.6rem;
 }
@@ -359,6 +361,36 @@ li{
     background-size: cover;
     background-repeat: no-repeat;
 
+}
+#carouselExtras .carousel-item:first-child .card-img-overlay{
+    background-image: url(./cuatri.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#carouselExtras .carousel-item:nth-child(2) .card-img-overlay{
+    background-image: url(./transporte1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#carouselExtras .carousel-item:nth-child(3) .card-img-overlay{
+    background-image: url(./ultraligero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#carouselExtras .carousel-item:nth-child(4) .card-img-overlay{
+    background-image: url(./hospedaje.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#carouselExtras .carousel-item:nth-child(5) .card-img-overlay{
+    background-image: url(./guia.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 @media (max-width: 575.98px) {
     #containerNavbar{
