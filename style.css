@@ -118,6 +118,8 @@ figure{
 .movie__hero{
     max-width: 300px;
     max-height: 400px;
+    min-width: 300px;
+    /* max-height: 400px; */
     overflow: hidden;
 }
 
@@ -330,6 +332,34 @@ li{
 /* .carousel-item .card{
     z-index: 100;
 } */
+.carousel-item:first-child .movie__hero{
+    background-image: url(./vuelo-tradicional.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.carousel-item:nth-child(2) .movie__hero{
+    background-image: url(./vuelo-basico.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.carousel-item:nth-child(3) .movie__hero{
+    background-image: url(./vuelo-especial.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.carousel-item:nth-child(4) .movie__hero{
+    background-image: url(./vuelo-privado.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
 @media (max-width: 575.98px) {
     #containerNavbar{
         padding: 0px;
